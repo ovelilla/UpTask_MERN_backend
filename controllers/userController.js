@@ -143,7 +143,7 @@ export const login = async (req, res) => {
 
         res.cookie("access_token", token, {
             expires: new Date(Date.now() + 24 * 3600000),
-            sameSite: "none"
+            sameSite: "none",
             secure: true,
             // httpOnly: true,
             // sameSite: "Strict",
