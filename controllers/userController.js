@@ -145,8 +145,8 @@ export const login = async (req, res) => {
             expires: new Date(Date.now() + 24 * 3600000),
             secure: false,
             httpOnly: true,
-            sameSite: "Strict",
-            domain: process.env.FRONTEND_URL
+            // sameSite: "Strict",
+            // domain: process.env.FRONTEND_URL
         });
 
         res.status(200).json({
