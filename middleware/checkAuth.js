@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 
 const checkAuth = async (req, res, next) => {
-    console.log(req.cookies.access_token)
+    console.log(req.cookies)
     const token = req.cookies.access_token;
 
     if (!token) {
