@@ -142,8 +142,8 @@ export const login = async (req, res) => {
         const token = generateJWT(user.id);
 
         res.cookie("access_token", token, {
-            expires: new Date(Date.now() + 24 * 3600000),
-            secure: false,
+            // expires: new Date(Date.now() + 24 * 3600000),
+            secure: true,
             httpOnly: true,
             // sameSite: "Strict",
             // domain: process.env.FRONTEND_URL
