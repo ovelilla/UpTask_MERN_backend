@@ -143,8 +143,8 @@ export const login = async (req, res) => {
 
         res.cookie("access_token", token, {
             // expires: new Date(Date.now() + 24 * 3600000),
-            secure: true,
-            httpOnly: true,
+            // secure: true,
+            // httpOnly: true,
             // sameSite: "Strict",
             // domain: process.env.FRONTEND_URL
         });
