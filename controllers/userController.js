@@ -146,6 +146,7 @@ export const login = async (req, res) => {
             secure: false,
             httpOnly: true,
             sameSite: "Strict",
+            domain: process.env.FRONTEND_URL
         });
 
         res.status(200).json({
